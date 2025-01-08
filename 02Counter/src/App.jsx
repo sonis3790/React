@@ -1,16 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-   let [counter, setCounter] =  useState(10)
+   const [counter, setCounter] =  useState(10)
 
   // let counter = 10
 
   const addValue = () => {
-    counter += 1
-    setCounter(counter)
+    // counter += 1
+    // setCounter(counter + 1)
+    // setCounter(counter + 1) /// they not work because using bunch of setcounter only one
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    setCounter(prevcounter => prevcounter + 1)
+    setCounter(prevcounter => prevcounter + 1)
+    setCounter(prevcounter => prevcounter + 1)
+    setCounter(prevcounter => prevcounter + 1)
+    setCounter(prevcounter => prevcounter + 1)
+
   }
 
   const removeValue = () => {
